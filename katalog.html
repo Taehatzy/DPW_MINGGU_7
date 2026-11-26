@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Katalog layanan dan harga LaundryKu.">
+  <title>Katalog Layanan | LaundryKu</title>
+  <script>
+    tailwind = { config: { darkMode: "class" } };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="transition-colors duration-300">
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+  <header class="site-header"><div class="container header-inner flex flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+  <a class="brand" href="index.html" aria-label="LaundryKu - Beranda">Laundry<span>Ku</span></a>
+  <nav aria-label="Navigasi utama"><ul class="nav-list flex flex-wrap gap-3 sm:gap-5"><li><a href="index.html">Beranda</a></li><li><a href="katalog.html" aria-current="page">Katalog</a></li><li><a href="detail-produk.html">Detail Produk</a></li><li><a href="tentang.html">Tentang</a></li><li><a href="kontak.html">Kontak</a></li></ul></nav>
+  <button class="theme-toggle rounded-lg border px-3 py-2 text-sm font-bold transition hover:-translate-y-0.5" type="button" aria-label="Ganti tema">🌙 Dark mode</button>
+  </div></header>
+
+  <main id="konten-utama">
+    <section class="page-heading">
+      <div class="container">
+        <p class="eyebrow">Katalog LaundryKu</p>
+        <h1>Pilih layanan yang kamu butuhkan</h1>
+        <p>Berikut contoh layanan dan harga untuk projek pembelajaran. Harga dapat disesuaikan dengan usaha laundry sebenarnya.</p>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="daftar-layanan-title">
+      <h2 id="daftar-layanan-title">Daftar layanan</h2>
+      <div class="product-grid product-grid-five grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Tumpukan pakaian dan handuk yang sudah bersih">
+          <div class="product-card-body"><h3>Cuci Reguler</h3><p>Cuci dan keringkan pakaian harian.</p><p class="price">Rp7.000/kg</p></div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1551761429-8232f9f5955c?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Kemeja bersih tergantung pada gantungan">
+          <div class="product-card-body"><h3>Cuci dan Setrika</h3><p>Layanan cuci dengan hasil pakaian lebih rapi.</p><p class="price">Rp10.000/kg</p></div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1600369671236-e74521d4b6ad?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sepatu yang sedang dibersihkan">
+          <div class="product-card-body"><h3>Cuci Sepatu</h3><p>Pembersihan sepatu sesuai jenis bahannya.</p><p class="price">Rp25.000/pasang</p></div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Sprei dan perlengkapan tempat tidur yang terlipat">
+          <div class="product-card-body"><h3>Cuci Bed Cover</h3><p>Pencucian perlengkapan tempat tidur.</p><p class="price">Rp25.000/item</p></div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Pakaian bersih yang ditata rapi setelah dicuci">
+          <div class="product-card-body"><h3>Setrika Saja</h3><p>Merapikan pakaian yang sudah dicuci.</p><p class="price">Rp6.000/kg</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <h2>Perbandingan layanan dan harga</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Daftar harga contoh layanan LaundryKu</caption>
+            <thead>
+              <tr>
+                <th scope="col">Nama layanan</th>
+                <th scope="col">Satuan</th>
+                <th scope="col">Harga</th>
+                <th scope="col">Estimasi pengerjaan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Cuci Reguler</th><td>Kilogram</td><td>Rp7.000</td><td>2–3 hari</td></tr>
+              <tr><th scope="row">Cuci dan Setrika</th><td>Kilogram</td><td>Rp10.000</td><td>2–3 hari</td></tr>
+              <tr><th scope="row">Cuci Sepatu</th><td>Pasang</td><td>Rp25.000</td><td>3–5 hari</td></tr>
+              <tr><th scope="row">Cuci Bed Cover</th><td>Item</td><td>Rp25.000</td><td>3–4 hari</td></tr>
+              <tr><th scope="row">Setrika Saja</th><td>Kilogram</td><td>Rp6.000</td><td>1–2 hari</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Catatan: harga dan estimasi di atas hanya data contoh untuk tugas, bukan penawaran usaha nyata.</p>
+        <a class="button" href="index.html#kontak">Tanyakan layanan</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner flex flex-wrap items-center justify-between gap-4 py-5"><p>© 2026 LaundryKu — Projek pembelajaran DPW.</p><a href="#konten-utama">Kembali ke atas ↑</a></div></footer>
+  <script src="js/script.js"></script>
+  <script>
+  (() => {
+   const root = document.documentElement;
+   const buttons = document.querySelectorAll(".theme-toggle");
+   const saved = localStorage.getItem("laundryku-theme");
+   if (saved === "dark") root.classList.add("dark");
+   const update = () => buttons.forEach(button => button.textContent = root.classList.contains("dark") ? "☀️ Light mode" : "🌙 Dark mode");
+   update();
+   buttons.forEach(button => button.addEventListener("click", () => {
+    root.classList.toggle("dark");
+    localStorage.setItem("laundryku-theme", root.classList.contains("dark") ? "dark" : "light");
+    update();
+   }));
+  })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</body></html>
